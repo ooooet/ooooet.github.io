@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="../css/portfolio.css">
+
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/brands.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
+
+</head>
+<body>
+
+    <ul>
+        <li>
+            <a href="../index.html">Kembali</a>
+        </li>
+    </ul>
+    <div class="mode">
+        <i class="fa-regular fa-moon"></i>
+    </div>
+
+    <div class="container">
+        <h1>Beberapa Portfolio yang telah saya buat</h1>
+
+        <div class="row">
+            <div class="col">
+                <img src="../img/CV raihan sandi.jpg" alt="">
+                <div class="deskripsi">
+                    <h2>Curriculum Vitae</h2>
+                    <p>Ini adalah Curriculum Vitae saya </p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="../img/bajucustompaskib2.png" alt="">
+                <div class="deskripsi">
+                    <h2>MockUp Baju Paskibra</h2>
+                    <p>Membuat mock up baju paskibra dengan kombinasi batik, saya bersama tim saya mengerjakan proyek ini menggunakan coreldraw.</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="../img/hpp.jpg" alt="">
+                <div class="deskripsi">
+                    <h2>HPP Produk</h2>
+                    <p>Membuat HPP pada produk dengan menggunakan google sheet untuk menentukan harga jual</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="../img/perkemahan.jpg" alt="">
+                <div class="deskripsi">
+                    <h2>Web Sederhana</h2>
+                    <p>Tugas membuat website sederhana perkemahan dengan html css dan js.</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="../img/suratPerjanjian.jpg" alt="">
+                <div class="deskripsi">
+                    <h2>Surat Perjanjian</h2>
+                    <p>Surat perjanjian dari project sekolah saya, Dibuat menggunakan microsoft word.</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="../img/gleo.jpg" alt="">
+                <div class="deskripsi">
+                    <h2>Konten Informatif</h2>
+                    <p>Konten informatif yang membantu dalam pemasaran. Saya membuat menggunakan canva.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="foter">Dibuat Oleh <span>@SandiSatria</span> 2024</footer>
+    
+    <script>
+        const mode = document.querySelector('.mode');
+            const body = document.querySelector('body');
+            const text = document.querySelector('.text');
+
+            mode.onclick = function() {
+                body.classList.toggle('gelap');
+            }
+    </script>
+</body>
+</html>

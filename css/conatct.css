@@ -1,0 +1,238 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    text-decoration: none;
+    list-style-type: none;
+}
+.sosmed{
+    display: flex;
+    padding: 20px 10px;
+    gap: 100px;
+}
+.sosmed i{
+    font-size: 3em;
+    color: rgb(62, 148, 247);
+}
+.gelap{
+    background-color: black;
+    color: white;
+    transition: 1s;
+    cursor:pointer;
+}
+.mode{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.5px 0.6px 7px lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+.mode:hover {
+    transform: rotate(20deg);
+}
+ul{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    left: 75px;
+    top: 20px;
+}
+ul li{
+    padding: 10px 15px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.774);
+    color: white;
+}
+ul li a{
+    color: white;
+}
+.container{
+    margin-top: 100px;
+}
+.container h1{
+    text-align: center;
+}
+.contact{
+    display: flex;
+    width: 90%;
+    margin: 50px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact img{
+    width: 100%;
+    max-width: 500px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 500px;
+    gap: 15px;
+}
+form input{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+}
+input::placeholder{
+    padding: 0 15px;
+    font-size: 1.2em;
+}
+button{
+    padding: 5px 25px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    background-color: rgb(255, 208, 0);
+}
+
+footer{
+    background-color: rgb(62, 148, 247);
+    margin: 100px 0 0 0;
+    text-align: center;
+    padding: 20px 0;
+    color: wheat;
+}
+footer span{
+    color:lightgreen;
+}
+.foter span{
+    color: red;
+}
+
+/* Responsif untuk layar lebih kecil */
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .contact img {
+        max-width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .sosmed {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .sosmed i {
+        font-size: 2.5rem;
+    }
+
+    ul {
+        width: 100%;
+        justify-content: center;
+        left: 0;
+    }
+
+    ul li {
+        margin: 0 5px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* Animasi pada ikon sosial media */
+.sosmed i {
+    font-size: 3em;
+    color: rgb(62, 148, 247);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.sosmed i:hover {
+    transform: scale(1.2);
+    color: rgb(255, 208, 0);
+}
+
+/* Animasi tombol */
+button {
+    padding: 5px 25px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    background-color: rgb(255, 208, 0);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(255, 170, 0);
+    transform: scale(1.1);
+}
+
+/* Tambahan animasi untuk mode gelap */
+.gelap {
+    background-color: black;
+    color: white;
+    transition: background-color 1s ease, color 1s ease;
+    cursor: pointer;
+}
+
+/* Efek masuk pada kontainer */
+.container {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efek hover pada list navigasi */
+ul li {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+ul li:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: translateY(-3px);
+}
+
+/* Tambahan gaya untuk form input */
+form input {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 0 15px;
+    font-size: 1.2em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+form input:focus {
+    box-shadow: 0 0 10px rgba(62, 148, 247, 0.5);
+    border-color: rgb(62, 148, 247);
+    outline: none;
+}

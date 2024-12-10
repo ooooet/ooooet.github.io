@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/brands.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="../index.html">Kembali</a>
+        </li>
+    </ul>
+    <div class="mode">
+        <i class="fa-regular fa-moon"></i>
+    </div>
+    <section class="about" id="about">
+        <h1 class="heading" >Sedikit Tentang Saya</h1>
+        
+        <div class="column">
+            <div class="image">
+                <img loading="lazy" src="../img/WhatsApp_Image_2023-10-25_at_13.34.18-removebg-preview.png" alt="">
+            </div>
+
+            <div class="content" >
+                <h3>Raihan Sandi Satria</h3>
+                <p>Saya seorang pelajar kelas 12 jurusan SIJA di SMK Fajar Utama. Saya memiliki minat mendalam di bidang teknologi informasi. Lahir di Bogor, saya merupakan anak kedua dari empat bersaudara. Saya memiliki semangat belajar yang tinggi dan selalu berusaha mengembangkan keterampilan di bidang IT, khususnya yang berkaitan dengan pemrograman, Desain, Pemasaran Digital dan teknologi terkini. Selain belajar, saya juga senang membaca buku untuk memperluas wawasan dan berenang sebagai hobi yang membantu menjaga kesehatan serta keseimbangan hidup. Saya terbiasa bekerja secara tim dan mudah beradaptasi dalam berbagai situasi.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="blog" id="galeri">
+        <div class="section__container blog__container">
+          <h2 class="section__header">Galeri</h2>
+
+          <div class="blog__grid">
+            <div class="blog__card">
+              <img src="../img/acara pernikahan.jpg" alt="blog" />
+              <h4>Acara Pernikahan Guru</h4>
+              <p>
+                 Saya dan beberapa murid menghadiri acara yang sangat penting bagi guru kita yaitu acara pernikahan.
+              </p>
+            </div>
+
+            <div class="blog__card">
+              <img src="../img/camping.jpg" alt="blog" />
+              <h4>Acara LDKS</h4>
+              <p>
+                Camping di daerah citamiang dalam acara LDKS yang di wajibkan di SMK Fajar Utama.
+              </p>
+            </div>
+            
+            <div class="blog__card">
+              <img src="../img/seminar.jpg" alt="blog" />
+              <h4>Seminar Hukum</h4>
+              <p>
+                Menghadiri seminar hukum yang di adakan di kantor pengadilan negri cibinong.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="foter">Dibuat Oleh <span>@SandiSatria</span> 2024</footer>
+
+    <!-- <script>
+        const mode = document.querySelector('.mode');
+        const body = document.querySelector('body');
+        const text = document.querySelector('.text');
+
+        mode.onclick = function() {
+            body.classList.toggle('gelap');
+        }
+    </script> -->
+
+    <script>
+      const mode = document.querySelector('.mode');
+      const body = document.querySelector('body');
+  
+      // Cek localStorage untuk mode gelap
+      if (localStorage.getItem('theme') === 'dark') {
+          body.classList.add('gelap');
+      }
+  
+      mode.onclick = function () {
+          body.classList.toggle('gelap');
+          // Simpan preferensi di localStorage
+          if (body.classList.contains('gelap')) {
+              localStorage.setItem('theme', 'dark');
+          } else {
+              localStorage.setItem('theme', 'light');
+          }
+      };
+  </script>
+  
+
+
+
+
+</body>
+</html>

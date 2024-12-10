@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/brands.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
+    <link rel="stylesheet" href="../css/skills.css">
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="../index.html">Kembali</a>
+        </li>
+    </ul>
+    <div class="mode">
+        <i class="fa-regular fa-moon"></i>
+    </div>
+
+
+    <div class="container">
+        <h1>Saya mempunyai beberapa skill</h1>
+
+        <div class="row">
+            <div class="col">
+                <i class="fa-solid fa-shop"></i>
+                <h2 class="text">Digital Marketing</h2>
+                <div class="img-logo">
+                    <img src="../img/instagram.png" alt="">
+                    <img src="../img/tiktok.png" alt="">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nihil.</p>
+            </div>
+            
+            <div class="col">
+                <i class="fa-solid fa-pen-nib"></i<i></i>
+                <h2>Desain</h2>
+                <div class="img-logo">
+                    <img src="../img/canva_3_-removebg-preview.png" alt="">
+                    <img src="../img/corel-removebg-preview.png" alt="">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nesciunt.</p>
+            </div>
+
+            <div class="col">
+                <i class="fa-brands fa-figma"></i>
+                <h2>UI/UX Desain</h2>
+                <div class="img-logo">
+                    <img src="../img/png-transparent-figma-app-logo-tech-companies-thumbnail-removebg-preview.png" alt="">
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, magni.</p>
+            </div>
+
+            <div class="col">
+                <i class="fa-brands fa-windows"></i>
+                <h2>Microsoft Office</h2>
+                <div class="img-logo">
+                    <img src="../img/word.png" alt="">
+                    <img src="../img/ppt.png" alt="">
+                    <img src="../img/excel.png" alt="">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, architecto?</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="foter">Dibuat Oleh <span>@SandiSatria</span> 2024</footer>    
+    <script>
+        const mode = document.querySelector('.mode');
+            const body = document.querySelector('body');
+            const text = document.querySelector('.text');
+
+            mode.onclick = function() {
+                body.classList.toggle('gelap');
+            }
+    </script>
+</body>
+</html>

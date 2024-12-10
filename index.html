@@ -1,0 +1,57 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/brands.min.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        
+        <link rel="stylesheet" href="css/style.css">
+        <title>profile</title>
+    </head>
+    <body> 
+        <div class="circle"></div>
+        <div class="star-container"></div>
+        <div class="mode">
+            <i class="fa-regular fa-moon"></i>
+        </div>
+        <div class="head">
+            <div class="profil ">
+                <img src="img/san.png">
+            </div>
+            <div class="profil">
+                    <h1 class="text">Raihan <span>Sandi</span></h1>
+                <h2>Digital Marketing & Designer</h2>
+                <p>Hallo Sobat, saya seorang pelajar yang ingin berkembang di bidang teknologi. Apkah anda suka dengan teknologi maka dekatilah semoga anda bisa berteman dengan baik </p>
+            </div>
+        </div>
+
+        <ul class="row">             
+            
+            <a href="page/about.html"><li >Tentang</li></a>
+            
+            <a href="page/portfolio.html"><li >Portofolio</li></a> 
+
+            <a href="page/skills.html">Skills</a>
+            
+            <a href="page/contact.html"><li >Kontak</li></a>
+            
+        </ul>
+
+        <footer class="foter">Dibuat Oleh <span>@SandiSatria</span> 2024</footer>
+
+
+        <script>
+            const mode = document.querySelector('.mode');
+            const body = document.querySelector('body');
+            const text = document.querySelector('.text');
+
+            mode.onclick = function() {
+                body.classList.toggle('gelap');
+            }
+        </script>
+    </body>
+    </html>

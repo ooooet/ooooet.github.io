@@ -1,0 +1,504 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    text-decoration: none;
+    list-style-type: none;
+}
+.gelap{
+    background-color: black;
+    color: white;
+    transition: 1s;
+    cursor:pointer;
+}
+.mode{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.5px 0.6px 7px lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+ul{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    left: 75px;
+    top: 20px;
+}
+ul li{
+    padding: 10px 15px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.774);
+    color: white;
+}
+ul li a{
+    color: white;
+}
+
+.container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+}
+.container h1{
+    text-align: center;
+}
+.row{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 1%;
+    flex-wrap: wrap;
+}
+.row .col{
+    width: 24%;
+    margin-bottom: 50px;
+}
+.row .col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.deskripsi h2{
+    color: rgb(62, 148, 247);
+}
+
+footer{
+    background-color: rgb(62, 148, 247);
+    margin: 100px 0 0 0;
+    text-align: center;
+    padding: 20px 0;
+    color: wheat;
+}
+footer span{
+    color:lightgreen;
+}
+.foter span{
+    color: red;
+} 
+
+
+/* opsi 2 */
+
+ /* @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+} */
+
+/* Mode Gelap */
+/* .gelap {
+    background-color: black;
+    color: white;
+    transition: background-color 0.6s ease, color 0.6s ease;
+} */
+
+/* Tombol Mode Gelap */
+/* .mode{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.5px 0.6px 7px lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+} */
+
+/* .mode:hover {
+    transform: rotate(20deg);
+} */
+
+/* Navigasi */
+/* ul {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    left: 75px;
+    top: 20px;
+} */
+
+/* ul li {
+    padding: 10px 15px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+} */
+
+/* ul li:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    transform: translateY(-3px);
+}
+
+ul li a {
+    color: white;
+} */
+
+/* Kontainer Utama */
+/* .container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    animation: fadeInDown 1s ease-in-out;
+} */
+
+/* @keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+/* Grid Portfolio */
+/* .row {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 1%;
+    flex-wrap: wrap;
+} */
+
+/* .row .col {
+    width: 24%;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.row .col:hover {
+    transform: scale(1.05);
+}
+
+.row .col img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.row .col:hover img {
+    transform: scale(1.1);
+}
+
+.deskripsi {
+    padding: 10px;
+    text-align: center;
+}
+
+.deskripsi h2 {
+    color: rgb(62, 148, 247);
+    font-size: 1.2rem;
+    margin: 10px 0;
+    animation: fadeIn 0.6s ease;
+}
+
+.deskripsi p {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+ul li {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+ul li:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: translateY(-3px);
+} */
+
+/* Footer */
+/* footer {
+    background-color: rgb(62, 148, 247);
+    margin: 100px 0 0 0;
+    text-align: center;
+    padding: 20px 0;
+    color: wheat;
+    position: relative;
+}
+
+footer span {
+    color: lightgreen;
+} */
+
+/* Responsif untuk layar lebih kecil */
+/* @media (max-width: 1024px) {
+    .row .col {
+        width: 32%;
+    }
+}
+
+@media (max-width: 768px) {
+    .row .col {
+        width: 48%;
+    }
+
+    ul {
+        left: 10px;
+    }
+
+    ul li {
+        padding: 5px 10px;
+    }
+
+    .mode {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .row .col {
+        width: 100%;
+    }
+
+    .container h1 {
+        font-size: 1.8rem;
+    }
+
+    .mode {
+        width: 30px;
+        height: 30px;
+    }
+} */ 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+/* Mode Gelap */
+.gelap {
+    background-color: black;
+    color: white;
+    transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+/* Tombol Mode Gelap */
+.mode{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.5px 0.6px 7px lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    
+}
+
+.mode:hover {
+    transform: rotate(20deg);
+}
+
+/* Navigasi */
+ul{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    left: 75px;
+    top: 20px;
+}
+ul li{
+    padding: 10px 15px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.774);
+    color: white;
+}
+ul li a{
+    color: white;
+}
+
+/* Kontainer Utama */
+.container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(62, 148, 247);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Grid Portofolio */
+.row {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 50px;
+    gap: 50px;
+}
+
+.row .col {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    background-color: rgba(240, 240, 240, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.row .col:hover {
+    transform: translateY(-10px);
+    background-color: rgba(62, 148, 247, 0.1);
+}
+
+.row .col img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.row .col img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.deskripsi h2 {
+    color: rgb(62, 148, 247);
+}
+
+.deskripsi p {
+    font-size: 1rem;
+    color: gray;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(62, 148, 247);
+    margin: 100px 0 0 0;
+    text-align: center;
+    padding: 20px 0;
+    color: wheat;
+    position: relative;
+}
+
+footer span {
+    color: red;
+}
+
+/* Responsif untuk layar lebih kecil */
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .mode {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container h1 {
+        font-size: 1.8rem;
+    }
+
+    .mode {
+        width: 30px;
+        height: 30px;
+    }
+
+    ul {
+        left: 10px;
+    }
+
+    ul li {
+        padding: 5px 10px;
+    }
+}
+ul li {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+ul li:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: translateY(-3px);
+}

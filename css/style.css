@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    min-height: 100vh; /* Tinggi minimum seluruh layar */
+}
+/* .circle{
+    width: 200px;
+    height:200px ;
+    border-radius: 100px;
+    background: linear-gradient(360deg, lightblue 0%, darkblue 100%);
+    position: fixed;
+    top: 200px;
+    left: 400px;
+    animation: jj linear 1s ease-in-out;
+} */
+
+
+
+
+
+
+
+.circle {
+    width: 200px;
+    height:200px ;
+    position: fixed;
+    top: 100px;
+    left: 750px;
+    background: linear-gradient(360deg, lightblue 0%, darkblue 100%);
+    backdrop-filter: blur(15px);
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    animation: smoothMoveAndScale 12s infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    z-index: -1;
+    /* background: linear-gradient(360deg, lightblue 0%, darkblue 100%);
+    border-radius: 50%;
+    position: fixed;
+    top: 100px;
+    left: 800px;
+    animation: moveAndScale 10s infinite ease-in-out; */
+}
+
+@keyframes smoothMoveAndScale {
+    0% {
+        transform: translate(0, 0) scale(1);
+        filter: blur(5px);
+    }
+    25% {
+        transform: translate(120px, -80px) scale(1.3);
+        filter: blur(10px);
+    }
+    50% {
+        transform: translate(240px, 0) scale(0.8);
+        filter: blur(3px);
+    }
+    75% {
+        transform: translate(120px, 80px) scale(1.5);
+        filter: blur(8px);
+    }
+    100% {
+        transform: translate(0, 0) scale(1);
+        filter: blur(5px);
+    }
+}
+
+
+
+.mode{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.5px 0.6px 7px lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+.mode:hover {
+    transform: rotate(20deg);
+}
+.head{
+    display: flex;
+    width: 90%;
+    margin: 40px auto;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+.profil{
+    width: 40%;
+    position: relative;
+    padding: 40px 0 0 0;
+}
+.profil h3{
+    margin-bottom: -50px;
+    color: rgb(62, 148, 247);
+}
+.profil:first-child {
+    display: flex;
+    justify-content: space-evenly;
+}
+.profil h1,.profil p{
+    padding: 20px 0;
+}
+.profil img{
+    width: 300px;
+    z-index: 1;
+    margin-top: -150px;
+}
+.profil .bg{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(62, 148, 247);
+    border-radius: 50%;
+    right: 80px;
+}
+.profil .sosmed{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 40px;
+}
+.sosmed i{
+    font-size: 1.5em;
+}
+
+.row{
+    width: 95%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;  
+    gap: 20px;
+    justify-content: center;
+}
+.row a{
+    text-align: center;
+    border-bottom: 1px solid orange;
+    width: 20%;
+    border-radius: 5px;
+    color:rgb(62, 148, 247);
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.row a:hover{
+    border-bottom: 1px solid rgb(62, 148, 247);
+    background-color: rgb(62, 148, 247);
+    transform: translateY(-10px) translateX(10px);
+    color: white;
+    box-shadow: 0.6px 0.6px 9px lightgray;
+}
+footer{
+    margin-top: auto; /* Mendorong footer ke bawah */
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(62, 148, 247);
+    margin: 100px 0 0 0;
+    text-align: center;
+    padding: 20px 0;
+    color: wheat;
+    font-size: 1rem;
+
+}
+footer span{
+    color:lightgreen;
+}
+.gelap{
+    background-color: black;
+    color: white;
+    transition: 1s;
+    cursor:pointer;
+}
+.head i:hover{
+    transition:1s;
+    transform: translateX(-5px);
+    border-radius:50%;
+}
+.text span{
+    color: rgb(62, 148, 247);
+    font-size:2.9rem;
+}
+.foter span{
+    color: red;
+}
+
+
+@media (max-width: 1200px) {
+    .circle {
+        top: 50px;
+        left: 600px;
+    }
+
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profil {
+        width: 80%;
+        text-align: center;
+    }
+
+    .profil img {
+        width: 200px;
+        margin-top: -100px;
+    }
+
+    .row a {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .circle {
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .head {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .profil {
+        width: 90%;
+    }
+
+    .profil img {
+        width: 150px;
+        margin-top: -80px;
+    }
+
+    .row a {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .mode {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profil img {
+        width: 120px;
+        margin-top: -50px;
+    }
+
+    .profil h1 {
+        font-size: 1.8rem;
+    }
+
+    .profil h2 {
+        font-size: 1rem;
+    }
+
+    .profil p {
+        font-size: 0.9rem;
+    }
+
+    .row a {
+        width: 90%;
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    footer {
+        padding: 15px 0;
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 480px) {
+    footer {
+        font-size: 0.8rem;
+        padding: 15px 0;
+    }
+}
